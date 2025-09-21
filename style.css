@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ff751a;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav-links button:nth-child(1),
+.nav-links button:nth-child(2) {
+  background-color: black;
+  color: white;
+}
+
+.nav-links button:nth-child(3) {
+  background-color: white;
+  color: black;
+}
+
+/* Button section */
+.center-btn {
+  margin: 100px auto 20px auto;
+}
+
+.big-btn {
+  background-color: #ff751a;
+  color: black;
+  border: none;
+  padding: 20px 60px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.center-btn p {
+  margin-top: 10px;
+}
+
+/* Image grid */
+.image-grid {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.image-box {
+  background-color: #ff751a;
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 18px;
+  flex-direction: column;
+}
+
+.image-box p {
+  margin-top: 10px;
+  color: white;
+}
+
+/* Toggle button */
+.toggle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.triangle-btn {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 70px solid #ff751a;
+  cursor: pointer;
+  position: relative;
+}
+
+.triangle-btn span {
+  position: absolute;
+  top: 50%;
+  left: -60%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 14px;
+}
+
+.hidden-text {
+  display: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+  transition: 0.3s;
+}
+
+.nav-links a.active {
+  background-color: orange;
+  color: black;
+}

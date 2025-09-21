@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIST Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">MIST</div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="glazing.html">Glazing MIST</a>
+      <a href="about.html">About Us</a>
+    </div>
+  </div>
+
+  <!-- Button with alert -->
+  <div class="center-btn">
+    <button class="big-btn" onclick="showDetails()">press me pls</button>
+    <p>clicking on this button shows your name, registration number and phone number in a JS alert</p>
+  </div>
+
+  <!-- Image grid -->
+  <div class="image-grid">
+    <div class="image-box">image 1<p>Image description</p></div>
+    <div class="image-box">image 2<p>Image description</p></div>
+    <div class="image-box">image 3<p>Image description</p></div>
+  </div>
+
+  <!-- Toggle text section -->
+  <div class="toggle-section">
+    <div class="triangle-btn" onclick="toggleText()">
+      <span>click me</span>
+    </div>
+    <div id="toggle-text" class="hidden-text">YOU CLICKED THE BUTTON YAYYY!!!</div>
+  </div>
+
+  <p class="note">
+    (on clicking the button, the text on the right appears <br> 
+    and on clicking the button again, it disappears)
+  </p>
+
+  <script>
+    function showDetails() {
+      let name = "Your Name";
+      let regNo = "123456";
+      let phone = "9876543210";
+      alert("Name: " + name + "\nReg No: " + regNo + "\nPhone: " + phone);
+    }
+
+    function toggleText() {
+      let text = document.getElementById("toggle-text");
+      if (text.style.display === "block") {
+        text.style.display = "none";
+      } else {
+        text.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>

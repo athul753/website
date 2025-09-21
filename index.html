@@ -4,18 +4,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MIST Website</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    header {
+      background-color: orange;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      text-decoration: none;
+      padding: 8px 15px;
+      margin-left: 10px;
+      border-radius: 20px;
+      color: white;
+      background-color: black;
+      transition: 0.3s;
+    }
+    nav a.active {
+      background-color: white;
+      color: black;
+    }
+    .center-btn {
+      margin-top: 150px;
+    }
+    .big-btn {
+      padding: 20px 40px;
+      background-color: orange;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .image-grid {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      gap: 20px;
+    }
+    .image-box {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .toggle-section {
+      margin-top: 40px;
+    }
+    .triangle-btn {
+      background: orange;
+      display: inline-block;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .hidden-text {
+      display: none;
+      margin-top: 20px;
+      font-weight: bold;
+      color: lightgreen;
+    }
+    .note {
+      margin-top: 10px;
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
-  <div class="navbar">
-    <div class="logo">MIST</div>
-    <div class="nav-links">
+  <header>
+    <img src="d167028d-c046-4d16-9774-d25d569622e2.png" alt="MIST Logo">
+    <nav>
       <a href="index.html" class="active">Home</a>
       <a href="glazing.html">Glazing MIST</a>
       <a href="about.html">About Us</a>
-    </div>
-  </div>
+    </nav>
+  </header>
 
   <!-- Button with alert -->
   <div class="center-btn">
@@ -62,3 +135,4 @@
   </script>
 </body>
 </html>
+

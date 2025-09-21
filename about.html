@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    header {
+      background-color: orange;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      text-decoration: none;
+      padding: 8px 15px;
+      margin-left: 10px;
+      border-radius: 20px;
+      color: white;
+      background-color: black;
+      transition: 0.3s;
+    }
+    nav a.active {
+      background-color: white;
+      color: black;
+    }
+    .info-btn {
+      margin-top: 150px;
+      padding: 20px 40px;
+      background-color: orange;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="d167028d-c046-4d16-9774-d25d569622e2.png" alt="MIST Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="glazing.html">Glazing MIST</a>
+      <a href="about.html" class="active">About Us</a>
+    </nav>
+  </header>
+
+  <button class="info-btn" onclick="showInfo()">press me pls</button>
+  <p>clicking on this button shows your name, registration number and phone number in a JS alert</p>
+
+  <script>
+    function showInfo() {
+      alert("Name: John Doe\nRegistration No: 123456\nPhone: 9876543210");
+    }
+  </script>
+</body>
+</html>
